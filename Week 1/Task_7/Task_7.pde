@@ -7,28 +7,32 @@
 
 int input = -20;
 int inputH = input/2;
+int inputG;
 
 if (input >= 0) {
-  for (input = 20; input >= 0; input--) {
-    if (inputH == input) {
+  for (inputG = input; inputG >= 0; inputG--) {
+    if (inputG == 0) {
+      print("Are you serious? It's just ");
+    }
+    if ((inputH == inputG) && (inputG != 0)) {
       print("HALF! ");
     }
-    if (input == 6) {
+    if (inputG == 6) {
       println("Six");
     } else {
-      println(input);
+      println(inputG);
     }
   }
 }
 if (input < 0) {
-  for (input = -20; input <= 0; input++) {
-    if (inputH == input) {
+  for (inputG = input; inputG <= 0; inputG++) {
+    if (inputH == inputG) {
       print("HALF! ");
     }
-    if (input == -6) {
+    if (inputG == -6) {
       println("Minus six");
     } else {
-      println(input);
+      println(inputG);
     }
   }
 }
