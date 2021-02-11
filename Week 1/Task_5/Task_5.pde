@@ -26,7 +26,7 @@ void MethodOne()
 */
 void MethodTwo() 
 {
-  int weekDay = 0; // 0 = Monday, 6 = Sunday. 
+  int weekDay = 4; // 0 = Monday, 6 = Sunday. 
   boolean weekend = false;
   if (weekDay < 5)
   {
@@ -38,9 +38,34 @@ void MethodTwo()
   }
   
   // Print the name of the weekday here: 
-
     
+    switch(weekDay)  {
+      case 0:
+      println("Monday");
+      break;
+      case 1:
+      println("Tuesday");
+      break;
+      case 2:
+      println("Wednesday");
+      break;
+      case 3:
+      println("Thursday");
+      break;
+      case 4:
+      println("Friday");
+      break;
     
   // Print if it is weekend here:
   
+      case 5:
+      print("Saturday");
+      break;
+      case 6:
+      print("Sunday");
+      break;
+    }
+    if (weekend)  {
+      println(" which is weekend");
+    }
 }
