@@ -7,6 +7,7 @@ color g = color(0, 255, 0);
 color b = color(0);
 color gray = color(100);
 
+
 void setup() {
   size(600, 600);
   background(255);
@@ -25,32 +26,47 @@ void setup() {
   ellipse(300, 460, 150, 150);
 }
 
+int go = 0;
+
+
 void draw() {
 
-  for (int go = 0; go <= 3; go++) {
-    switch(go) {
-    case 1 : 
-      // Red
-      fill(r); 
-      stroke(255); 
-      ellipse(300, 140, 150, 150);
-      delay(2000);
-      break; 
+  switch(go) {
+  case 1 : 
+  // setup to turn off all lights
+    setup();
+    // Red
+    fill(r); 
+    stroke(255); 
+    ellipse(300, 140, 150, 150);
+    delay(1000);
+    break; 
 
-    case 2 : 
-      // Yellow
-      fill(y); 
-      stroke(255); 
-      ellipse(300, 300, 150, 150); 
-      delay(2000);
-      break; 
+  case 2 : 
+    // Yellow
+    fill(y); 
+    stroke(255); 
+    ellipse(300, 300, 150, 150); 
+    delay(1000);
+    break; 
 
-    case 3 : 
-      // Green
-      fill(g); 
-      stroke(255); 
-      ellipse(300, 460, 150, 150); 
-      break;
-    }
+  case 3 : 
+    setup();
+    // Green
+    fill(g); 
+    stroke(255); 
+    ellipse(300, 460, 150, 150); 
+    delay(1000);
+    break;
+
+  case 4:
+    setup();
+    fill(y); 
+    stroke(255); 
+    ellipse(300, 300, 150, 150); 
+    delay(1000);
+    go = 0;
+    //
   }
+  go++;
 }
