@@ -5,18 +5,31 @@
 //Once the number is half of the input value, print "HALF!"
 
 
-int input = 20;
+int input = -20;
 int inputH = input/2;
 
-for (input = 20; input >= 0; input--) {
-  if (inputH == input)  {
-    print("HALF!");
+if (input >= 0) {
+  for (input = 20; input >= 0; input--) {
+    if (inputH == input) {
+      print("HALF! ");
+    }
+    if (input == 6) {
+      println("Six");
+    } else {
+      println(input);
+    }
   }
-  if (input == 6) {
-    println("Six");
-  } 
-  else {
-    println(input);
+}
+if (input < 0) {
+  for (input = -20; input <= 0; input++) {
+    if (inputH == input) {
+      print("HALF! ");
+    }
+    if (input == -6) {
+      println("Minus six");
+    } else {
+      println(input);
+    }
   }
 }
 
