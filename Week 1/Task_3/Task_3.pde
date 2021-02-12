@@ -18,7 +18,7 @@ void setup() {
   // Draw traffic light
   fill(b);
   rect(300, 300, 200, 500);
-
+  
   fill(gray);
   stroke(255);
   ellipse(300, 140, 150, 150);
@@ -33,8 +33,8 @@ void draw() {
 
   switch(go) {
   case 1 : 
-  // setup to turn off all lights
-    setup();
+    // setup to turn off all lights
+    reset();
     // Red
     fill(r); 
     stroke(255); 
@@ -51,7 +51,7 @@ void draw() {
     break; 
 
   case 3 : 
-    setup();
+    reset();
     // Green
     fill(g); 
     stroke(255); 
@@ -60,7 +60,8 @@ void draw() {
     break;
 
   case 4:
-    setup();
+    reset();
+    // Yellow
     fill(y); 
     stroke(255); 
     ellipse(300, 300, 150, 150); 
@@ -69,4 +70,13 @@ void draw() {
     //
   }
   go++;
+}
+
+void reset() {
+
+  fill(gray);
+  stroke(255);
+  ellipse(300, 140, 150, 150);
+  ellipse(300, 300, 150, 150);
+  ellipse(300, 460, 150, 150);
 }
