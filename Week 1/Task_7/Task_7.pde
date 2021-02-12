@@ -5,16 +5,16 @@
 //Once the number is half of the input value, print "HALF!"
 
 
-int input = -20;
+int input = 12;
 int inputH = input/2;
 int inputG;
 
-if (input >= 0) {
+if (input == 0) {
+  print("Are you serious? It's just ");
+}
+if (input > 0) {
   for (inputG = input; inputG >= 0; inputG--) {
-    if (inputG == 0) {
-      print("Are you serious? It's just ");
-    }
-    if ((inputH == inputG) && (inputG != 0)) {
+    if (inputH == inputG) {
       print("HALF! ");
     }
     if (inputG == 6) {
