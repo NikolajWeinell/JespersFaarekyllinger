@@ -15,6 +15,7 @@ public static void main(String [] args) {
 
 System.out.println(intSum(5,7));
 System.out.println(upperCase("test"));
+System.out.println(isUpperCase("test"));
 
 }
 
@@ -42,7 +43,8 @@ public static String upperCase(String str)  {
 
 public static boolean isUpperCase(String str)    {
 
-    if 
+
+    str.charAt(0).isUpperCase;
 
     return true;
 }
