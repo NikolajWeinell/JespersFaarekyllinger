@@ -40,11 +40,11 @@ public static String upperCase(String str)  {
     return str;
 }
 
-public static String isUpperCase(String str)    {
+public static boolean isUpperCase(String str)    {
 
+    if 
 
-
-    return str;
+    return true;
 }
 
 
