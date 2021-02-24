@@ -4,12 +4,11 @@ public class Teacher {
     private int age;
     private boolean isFemale;
     
-    public isTeacher(String tmpName, int tmpAge, boolean tmpIsFemale)   {
+
+    public Teacher(String tmpName, int tmpAge, boolean tmpIsFemale)   {
 
         this.name = tmpName;
         this.age = tmpAge;
         this.isFemale = tmpIsFemale;
-
     }
-
 }
