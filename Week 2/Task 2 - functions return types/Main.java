@@ -1,6 +1,6 @@
-
 class Main{
-  public static boolean happy = true;
+
+public static boolean happy = true;
 
 
 public static void main(String [] args) {
@@ -15,17 +15,14 @@ public static void main(String [] args) {
 
 System.out.println(intSum(5,7));
 System.out.println(upperCase("test"));
-System.out.println(isUpperCase("test"));
+System.out.println(isUpperCase("TEST"));
 
 }
 
 
 public static boolean iAmHappy()
 {
-  // fill out what is missing here: 
-
-
-  return true;
+  return happy;
 }
 
 
@@ -44,10 +41,9 @@ public static String upperCase(String str)  {
 public static boolean isUpperCase(String str)    {
 
 
-    str.charAt(0).isUpperCase;
+    //Character.isUpperCase(str.charAt(0));
 
-    return true;
+    return Character.isUpperCase(str.charAt(0));
 }
-
 
 }
