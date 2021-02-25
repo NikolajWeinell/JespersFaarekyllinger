@@ -1,20 +1,34 @@
 public class Main {
+
+    public static int[] intarray = {2,4,6,8};
+    public static int sum = 0;
+    public static int avg = 0;
+    public static String[] stringarray;
+    public static boolean[] booleanarray = {true, false, false};
+
     public static void main(String[] args) {
         
-        int[] intarray = {2,4,6,8};
-        String[] stringarray;
-        boolean[] booleanarray = {true, false, false};
-
-       
-        stringarrayM();
-
-        for (int tal: intarray)  {
-            int sum = tal + tal;
-            System.out.println(sum);
-        }
-
+    
         for (boolean bool: booleanarray)   {
-            System.out.println(bool);
+        System.out.println(bool);
+        }
+    }
+
+    public int summer(int sum)  {
+        
+        for (int tal: intarray)  {
+            sum += tal;
+            return sum;
+        }
+    }
+
+    public int averager(int avg)  {
+        
+        for (int tal: intarray)  {
+            sum += tal;
+            int len = intarray.length;
+            avg = sum/len;
+            return avg;
         }
     }
 
@@ -28,5 +42,8 @@ public class Main {
 
     }
 }
+
+
+
 
 
