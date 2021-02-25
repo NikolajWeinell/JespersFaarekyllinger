@@ -4,11 +4,10 @@ public class Teacher {
     int age;
     boolean isFemale;
     
-// tmpName virkede ikke, så brugte bare name, etc.
-    public Teacher(String name, int age, boolean isFemale)   {
+    public Teacher(String tmpName, int tmpAge, boolean tmpisFemale)   {
 
-        this.name = name;
-        this.age = age;
-        this.isFemale = isFemale;
+        this.name = tmpName;
+        this.age = tmpAge;
+        this.isFemale = tmpisFemale;
     }
 }
