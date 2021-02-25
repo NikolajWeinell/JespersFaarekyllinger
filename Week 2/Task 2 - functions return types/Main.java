@@ -45,5 +45,4 @@ public static boolean isUpperCase(String str)    {
 
     return Character.isUpperCase(str.charAt(0));
 }
-
 }
