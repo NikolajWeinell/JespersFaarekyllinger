@@ -1,14 +1,15 @@
 public class Main {
 
+
+    String[] stringarray = {"Datamatiker", "POGGERS", "KomodoHype"};
     public static int[] intarray = {2,4,6,8};
     public static int sum = 0;
     public static int avg = 0;
-    public static String[] stringarray;
     public static boolean[] booleanarray = {true, false, false};
 
     public static void main(String[] args) {
         
-    
+        
         for (boolean bool: booleanarray)   {
         System.out.println(bool);
         }
@@ -19,9 +20,10 @@ public class Main {
 }
 
 
-public static void stringarrayM()   {
 
-    String[] stringarray = {"Datamatiker", "POGGERS", "KomodoHype"};
+
+
+public static void stringarrayM(String[] s)   {
 
     for (String str: stringarray)   {
         System.out.println(str);
