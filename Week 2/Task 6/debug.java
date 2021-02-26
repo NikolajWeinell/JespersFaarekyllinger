@@ -12,14 +12,14 @@ public class debug {
 
     
 public static void main(String[] args) {
-    public class Oops {
+
         int a = 7;
         int b = 42;
         minimum(a,b);
         if (smaller == a) {
         System.out.println("a is the smallest!");
           }
-        }
+        
         public static void minimum(int a, int b) {
           if (a < b) {
             int smaller = a;
@@ -27,9 +27,9 @@ public static void main(String[] args) {
             int smaller = b;
           }
         }
-          return int smaller;
         
     }
-}
-}
+  }
+
+
 
