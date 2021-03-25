@@ -6,7 +6,7 @@ public class ElCar extends Car {
     double kmPrL = (whPrKm/91.25)/100;
 
 
-    public ElCar(int regNo, String brand, String model, int year, int amountDoors, int batteryCapacityKWh,
+    public ElCar(String regNo, String brand, String model, int year, int amountDoors, int batteryCapacityKWh,
                       int maxKm, int whPrKm, double kmPrL) {
 
         super(regNo, brand, model, year, amountDoors);
@@ -44,16 +44,17 @@ public class ElCar extends Car {
 
     @Override
     public String toString() {
-        return "ElCar{" +
-                "regNo=" + regNo +
-                ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                ", amountDoors=" + amountDoors +
-                ", batteryCapacityKWh=" + batteryCapacityKWh +
-                ", maxKm=" + maxKm +
-                ", whPrKm=" + whPrKm +
-                ", kmPrL=" + kmPrL +
-                '}';
+        return '\n' +
+                "ElCar " +
+                "regNo = " + regNo +
+                ", brand = '" + brand + '\'' +
+                ", model = '" + model + '\'' +
+                ", year = " + year +
+                ", amountDoors = " + amountDoors +
+                ", batteryCapacityKWh = " + batteryCapacityKWh +
+                ", maxKm = " + maxKm +
+                ", whPrKm = " + whPrKm +
+                ", kmPrL = " + kmPrL
+                ;
     }
 }

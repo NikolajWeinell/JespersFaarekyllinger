@@ -5,7 +5,7 @@ public class DieselCar extends Car {
     int kmPrL;
 
 
-    public DieselCar(int regNo, String brand, String model, int year, int amountDoors, boolean hasParticlefilter,
+    public DieselCar(String regNo, String brand, String model, int year, int amountDoors, boolean hasParticlefilter,
                      int kmPrL) {
 
         super(regNo, brand, model, year, amountDoors);
@@ -43,15 +43,16 @@ public class DieselCar extends Car {
 
     @Override
     public String toString() {
-        return "DieselCar{" +
-                "regNo=" + regNo +
-                ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                ", amountDoors=" + amountDoors +
-                ", hasParticlefilter=" + hasParticlefilter +
-                ", kmPrL=" + kmPrL +
-                '}';
+        return  '\n' +
+                "DieselCar " +
+                "regNo = " + regNo +
+                ", brand = '" + brand + '\'' +
+                ", model = '" + model + '\'' +
+                ", year = " + year +
+                ", amountDoors = " + amountDoors +
+                ", hasParticlefilter = " + hasParticlefilter +
+                ", kmPrL = " + kmPrL
+                ;
     }
 }
 

@@ -31,9 +31,7 @@ public class Garage {
 
     @Override
     public String toString() {
-        return "Garage{" +
-                "garageName='" + garageName + '\'' +
-                ", cars=" + cars +
-                '}';
+        return "Garage: "  + garageName +
+                "\n" + cars;
     }
 }

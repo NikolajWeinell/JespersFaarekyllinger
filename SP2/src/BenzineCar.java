@@ -4,7 +4,7 @@ public class BenzineCar extends  Car{
     int kmPrL;
 
 
-    public BenzineCar(int regNo, String brand, String model, int year, int amountDoors,int octaneNo, int kmPrL) {
+    public BenzineCar(String regNo, String brand, String model, int year, int amountDoors,int octaneNo, int kmPrL) {
 
         super(regNo, brand, model, year, amountDoors);
 
@@ -48,14 +48,15 @@ public class BenzineCar extends  Car{
 
     @Override
     public String toString() {
-        return "BenzineCar{" +
-                "octaneNo=" + octaneNo +
-                ", kmPrL=" + kmPrL +
-                ", regNo=" + regNo +
-                ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                ", amountDoors=" + amountDoors +
-                '}';
+        return '\n' +
+                "BenzineCar " +
+                "octaneNo = " + octaneNo +
+                ", kmPrL = " + kmPrL +
+                ", regNo = " + regNo +
+                ", brand = '" + brand + '\'' +
+                ", model = '" + model + '\'' +
+                ", year = " + year +
+                ", amountDoors = " + amountDoors
+                ;
     }
 }
